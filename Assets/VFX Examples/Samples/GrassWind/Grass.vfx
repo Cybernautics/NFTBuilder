@@ -12928,7 +12928,8 @@ MonoBehaviour:
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
   m_InputSlots: []
-  m_OutputSlots: []
+  m_OutputSlots:
+  - {fileID: 8926484042661616509}
 --- !u!114 &8926484042661615836
 MonoBehaviour:
   m_ObjectHideFlags: 0
