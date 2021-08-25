@@ -150,7 +150,7 @@ MonoBehaviour:
     enumValues: []
     descendantCount: 0
   m_ImportDependencies: []
-  m_GraphVersion: 6
+  m_GraphVersion: 8
   m_ResourceVersion: 1
   m_SubgraphDependencies:
   - {fileID: 5371698748595113096, guid: 56bc4730042734b418e6445a2b32dade, type: 3}
@@ -813,7 +813,7 @@ MonoBehaviour:
   stripCapacity: 1
   particlePerStripCount: 1024
   needsComputeBounds: 0
-  boundsSettingMode: 0
+  boundsSettingMode: 1
   m_Space: 1
 --- !u!114 &8926484042661615048
 MonoBehaviour:
@@ -3151,7 +3151,7 @@ MonoBehaviour:
   stripCapacity: 16
   particlePerStripCount: 16
   needsComputeBounds: 0
-  boundsSettingMode: 0
+  boundsSettingMode: 1
   m_Space: 1
 --- !u!114 &8926484042661615227
 MonoBehaviour:
@@ -5208,7 +5208,7 @@ MonoBehaviour:
   stripCapacity: 16
   particlePerStripCount: 16
   needsComputeBounds: 0
-  boundsSettingMode: 0
+  boundsSettingMode: 1
   m_Space: 1
 --- !u!114 &8926484042661615314
 MonoBehaviour:
@@ -6394,7 +6394,7 @@ MonoBehaviour:
   stripCapacity: 64
   particlePerStripCount: 200
   needsComputeBounds: 0
-  boundsSettingMode: 0
+  boundsSettingMode: 1
   m_Space: 1
 --- !u!114 &8926484042661615381
 MonoBehaviour:
