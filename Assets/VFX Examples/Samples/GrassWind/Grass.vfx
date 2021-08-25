@@ -898,7 +898,7 @@ MonoBehaviour:
     descendantCount: 2
   - name: center
     path: Terrain Bounds_center
-    tooltip: The centre of the box.
+    tooltip: Sets the center of the box.
     sheetType: m_Vector3f
     realType: Vector3
     defaultValue:
@@ -912,7 +912,7 @@ MonoBehaviour:
     descendantCount: 0
   - name: size
     path: Terrain Bounds_size
-    tooltip: The size of the box along each axis.
+    tooltip: Sets the size of the box along each axis.
     sheetType: m_Vector3f
     realType: Vector3
     defaultValue:
@@ -1036,7 +1036,7 @@ MonoBehaviour:
     enumValues: []
     descendantCount: 0
   m_ImportDependencies: []
-  m_GraphVersion: 6
+  m_GraphVersion: 8
   m_ResourceVersion: 1
   m_SubgraphDependencies: []
   m_CategoryPath: 
@@ -1101,7 +1101,7 @@ MonoBehaviour:
   stripCapacity: 16
   particlePerStripCount: 16
   needsComputeBounds: 0
-  boundsSettingMode: 0
+  boundsSettingMode: 1
   m_Space: 1
 --- !u!114 &114512514798047786
 MonoBehaviour:

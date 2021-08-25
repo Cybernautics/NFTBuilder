@@ -188,7 +188,7 @@ MonoBehaviour:
     enumValues: []
     descendantCount: 0
   m_ImportDependencies: []
-  m_GraphVersion: 6
+  m_GraphVersion: 8
   m_ResourceVersion: 1
   m_SubgraphDependencies: []
   m_CategoryPath: 
@@ -252,7 +252,7 @@ MonoBehaviour:
   stripCapacity: 16
   particlePerStripCount: 16
   needsComputeBounds: 0
-  boundsSettingMode: 0
+  boundsSettingMode: 1
   m_Space: 0
 --- !u!114 &114512514798047786
 MonoBehaviour:
@@ -4038,7 +4038,7 @@ MonoBehaviour:
   stripCapacity: 3200
   particlePerStripCount: 300
   needsComputeBounds: 0
-  boundsSettingMode: 0
+  boundsSettingMode: 1
   m_Space: 0
 --- !u!114 &8926484042661615203
 MonoBehaviour:
