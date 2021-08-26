@@ -239,7 +239,7 @@ MonoBehaviour:
   stickyNoteInfos: []
   categories:
   - name: Emission
-    collapsed: 1
+    collapsed: 0
   - name: Velocity and Forces
     collapsed: 1
   - name: Color
@@ -252,8 +252,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: -381
     y: -241
-    width: 1488
-    height: 2331
+    width: 1520
+    height: 2329
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4115,7 +4115,7 @@ MonoBehaviour:
       inputSlot: {fileID: 8926484042661614685}
     position: {x: 377, y: 82}
     expandedSlots: []
-    expanded: 0
+    expanded: 1
 --- !u!114 &8926484042661614702
 MonoBehaviour:
   m_ObjectHideFlags: 0
