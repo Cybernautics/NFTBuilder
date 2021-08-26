@@ -1,22 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class Firework : MonoBehaviour
 {
 
     public float propelTime;
     public float propelForce;
-    [Range(0,90)]
-    public float launchAngle;
 
     public float mainChargeTime;
+
+    public VisualEffect trailVFX;
+    public VisualEffect chargeVFX;
 
     bool launchFirework;
     bool startMainChargeFuse;
     float launchTime;
     float chargeFuseTime;
     Rigidbody rb;
+
+    
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -36,16 +40,20 @@ public class Firework : MonoBehaviour
         {
             if (Time.time - launchTime < propelTime)
             {
+                trailVFX.SendEvent("StartTrail");
                 rb.AddForce(Vector3.up * propelForce, ForceMode.Acceleration);
             } else if (!startMainChargeFuse)
             {
+                trailVFX.SendEvent("StopTrail");
                 startMainChargeFuse = true;
                 chargeFuseTime = Time.time;
             } else
             {
-                if (!(Time.time - chargeFuseTime < mainChargeTime))
+                if (!(Time.time - chargeFuseTime < mainChargeTime) && rb.isKinematic == false)
                 {
                     Debug.Log("BOOM!");
+                    chargeVFX.SendEvent("SetCharge");
+
                     rb.isKinematic = true;
                 }
 
