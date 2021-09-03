@@ -13,6 +13,7 @@ public class Firework : MonoBehaviour
 
     public VisualEffect trailVFX;
     public VisualEffect chargeVFX;
+    public VisualEffect smokeVFX;
 
     bool launchFirework;
     bool startMainChargeFuse;
@@ -41,10 +42,12 @@ public class Firework : MonoBehaviour
             if (Time.time - launchTime < propelTime)
             {
                 trailVFX.SendEvent("StartTrail");
+                smokeVFX.SendEvent("SmokeStart");
                 rb.AddForce(Vector3.up * propelForce, ForceMode.Acceleration);
             } else if (!startMainChargeFuse)
             {
                 trailVFX.SendEvent("StopTrail");
+                smokeVFX.SendEvent("SmokeStop");
                 startMainChargeFuse = true;
                 chargeFuseTime = Time.time;
             } else
