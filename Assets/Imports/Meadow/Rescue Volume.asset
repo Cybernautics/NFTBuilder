@@ -15,7 +15,7 @@ MonoBehaviour:
   active: 1
   skyType:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 1
   cloudType:
     m_OverrideState: 1
     m_Value: 1
@@ -67,13 +67,13 @@ MonoBehaviour:
     m_Value: 1000
   baseHeight:
     m_OverrideState: 1
-    m_Value: 69.7
+    m_Value: 0
   maximumHeight:
-    m_OverrideState: 0
-    m_Value: 77.95
+    m_OverrideState: 1
+    m_Value: 20
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 53.9
+    m_Value: 13.5
   enableVolumetricFog:
     m_OverrideState: 1
     m_Value: 1
@@ -85,7 +85,7 @@ MonoBehaviour:
     m_Value: 1
   depthExtent:
     m_OverrideState: 1
-    m_Value: 61
+    m_Value: 1.5
   denoisingMode:
     m_OverrideState: 0
     m_Value: 2
@@ -237,10 +237,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56b145d2b9ee1ac4f846968484e7485a, type: 3}
   m_Name: ContactShadows
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   quality:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2
   enable:
     m_OverrideState: 1
     m_Value: 1
@@ -273,7 +273,32 @@ MonoBehaviour:
     m_Value: 0.15
   m_SampleCount:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 12
+--- !u!114 &-3752508419159314404
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bd486065ce11414fa40e631affc4900, type: 3}
+  m_Name: ProbeVolumesOptions
+  m_EditorClassIdentifier: 
+  active: 1
+  normalBias:
+    m_OverrideState: 0
+    m_Value: 0.33
+  viewBias:
+    m_OverrideState: 0
+    m_Value: 0
+  scaleBiasWithMinProbeDistance:
+    m_OverrideState: 0
+    m_Value: 0
+  samplingNoise:
+    m_OverrideState: 0
+    m_Value: 0.125
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,6 +321,7 @@ MonoBehaviour:
   - {fileID: 4863599811500932186}
   - {fileID: 1020806659986985061}
   - {fileID: -4712014170423610323}
+  - {fileID: -3752508419159314404}
 --- !u!114 &642943189131519608
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -308,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f077503be6ae942a1e1245dbd53ea9, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   quality:
     m_OverrideState: 1
     m_Value: 2
@@ -317,12 +343,12 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.307
+    m_Value: 0.172
   scatter:
     m_OverrideState: 1
-    m_Value: 0.902
+    m_Value: 1
   tint:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   dirtTexture:
     m_OverrideState: 0
@@ -360,7 +386,7 @@ MonoBehaviour:
     m_Value: 1
   contrast:
     m_OverrideState: 1
-    m_Value: 45
+    m_Value: 33
   colorFilter:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -369,7 +395,7 @@ MonoBehaviour:
     m_Value: -180
   saturation:
     m_OverrideState: 1
-    m_Value: 44
+    m_Value: 16
 --- !u!114 &2878118409306954792
 MonoBehaviour:
   m_ObjectHideFlags: 3
