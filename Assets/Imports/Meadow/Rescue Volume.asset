@@ -15,7 +15,7 @@ MonoBehaviour:
   active: 1
   skyType:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 4
   cloudType:
     m_OverrideState: 1
     m_Value: 1
@@ -73,7 +73,7 @@ MonoBehaviour:
     m_Value: 20
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 13.5
+    m_Value: 9.6
   enableVolumetricFog:
     m_OverrideState: 1
     m_Value: 1
@@ -85,7 +85,7 @@ MonoBehaviour:
     m_Value: 1
   depthExtent:
     m_OverrideState: 1
-    m_Value: 1.5
+    m_Value: 10.06
   denoisingMode:
     m_OverrideState: 0
     m_Value: 2
@@ -288,8 +288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   normalBias:
-    m_OverrideState: 0
-    m_Value: 0.33
+    m_OverrideState: 1
+    m_Value: 0.314
   viewBias:
     m_OverrideState: 0
     m_Value: 0
